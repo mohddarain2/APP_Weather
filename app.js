@@ -51,10 +51,14 @@ let changeCity = (stateVal)=>{
         str +="<option value='Katni'>Katni</option>";
         str +="<option value='Jabalpur'>Jabalpur</option>"; 
         str +="<option value='Gwalior'>Gwalior</option>";
-    }else if(stateVal == "chattishGarh"){
+    }else if(stateVal == "Chattishgarh"){
         str = "<option value='audi'>Choose City</option>"
         str +="<option value='Raipur'>Raipur</option>"
         str +="<option value='Bilaspur'>Bilaspur</option>"
+        str +="<option value='Durg'>Durg</option>"
+        str +="<option value='Raigarh'>Raigarh</option>"
+        str +="<option value='Korba'>Korba</option>"
+        str +="<option value='Mahasamund'>Mahasamund</option>"
     }else if(stateVal == "Maharastra"){
         str = "<option value='audi'>Choose City</option>"
         str +="<option value='Mumbai'>Mumbai</option>"
@@ -62,6 +66,44 @@ let changeCity = (stateVal)=>{
         str +="<option value='Nagpur'>Nagpur</option>"
         str +="<option value='Nashik'>Nashik</option>"
     }
+    else if(stateVal == "Himachal Pradesh"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Shimla'>Shimla</option>"
+        str +="<option value='Solan'>Solan</option>"
+        str +="<option value='Mandi'>Mandi</option>"
+        str +="<option value='Chamba'>Chamba</option>"
+        str +="<option value='Kullu'>Kullu</option>"
+        str +="<option value='Mandi'>Mandi</option>"
+    }
+    else if(stateVal == "Manipur"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Dispur'>Dispur</option>"
+        str +="<option value='Imphal'>Imphal</option>"
+        str +="<option value='Churachandpur'>Churachandpur</option>"
+        str +="<option value='Bishnupur'>Bishnupur</option>"
+        str +="<option value='Uashik'>Ukhrul</option>"
+        str +="<option value='tamenlong'>Tamenglong</option>"
+    }
+   
+    else if(stateVal == "Haryana"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Ambala'>Ambala</option>"
+        str +="<option value='Rohtak'>Rohtak</option>"
+        str +="<option value='Hisar'>Hisar</option>"
+        str +="<option value='Karnal'>Karnal</option>"
+        str +="<option value='Panipat'>Panipat</option>"
+        str +="<option value='Gurugram'>Gurugram</option>"
+    }
+    else if(stateVal == "Nagaland"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Kohima'>Kohima</option>"
+        str +="<option value='Dimapur'>Dimapur</option>"
+        str +="<option value='Mokokchung'>Mokokchung</option>"
+        str +="<option value='Wokha'>Wokha</option>"
+        str +="<option value='Phek'>Phek</option>"
+        str +="<option value='Soma'>Soma</option>"
+    }
+
     cityVal.innerHTML = str;
     console.log(str);
 }
