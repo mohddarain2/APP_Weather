@@ -34,5 +34,49 @@ const showWeather = (data)=>{
                         </div>`
 }
 
+let state = document.getElementById("two")
+let cityVal = document.getElementById("three")
+
+let changeCity = (stateVal)=>{
+    var str = "";
+    if(stateVal =="Punjab"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Amritsar'>Amritsar</option>"
+
+    }else if(stateVal == "MP"){
+        str = "<option value='audi'>Choose City</option>";
+        str +="<option value='Indore'>Indore</option>";
+        str +="<option value='Bhopal'>Bhopal</option>";
+        str +="<option value='Ujjain'>Ujjain</option>"; 
+        str +="<option value='Katni'>Katni</option>";
+        str +="<option value='Jabalpur'>Jabalpur</option>"; 
+        str +="<option value='Gwalior'>Gwalior</option>";
+    }else if(stateVal == "chattishGarh"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Raipur'>Raipur</option>"
+        str +="<option value='Bilaspur'>Bilaspur</option>"
+    }else if(stateVal == "Maharastra"){
+        str = "<option value='audi'>Choose City</option>"
+        str +="<option value='Mumbai'>Mumbai</option>"
+        str +="<option value='Pune'>pune</option>"
+        str +="<option value='Nagpur'>Nagpur</option>"
+        str +="<option value='Nashik'>Nashik</option>"
+    }
+    cityVal.innerHTML = str;
+    console.log(str);
+}
+
+state.addEventListener("change",()=>{
+    //state.value
+
+    changeCity(state.value)
+
+})
+
+cityVal.addEventListener("change",()=>{
+    search.value = cityVal.value
+    getWeather(cityVal.value)
+})
+
 
 
